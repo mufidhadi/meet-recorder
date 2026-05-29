@@ -1,0 +1,36 @@
+[project]
+name = "meet-recorder"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-generativeai>=0.8.6",
+    "numpy>=2.4.4",
+    "openai>=2.32.0",
+    "psutil>=7.2.2",
+    "pyaudiowpatch>=0.2.12.8",
+    "pydantic>=2.13.3",
+    "pydantic-settings>=2.14.0",
+    "pyqt6>=6.11.0",
+    "pywin32>=311",
+    "rich>=15.0.0",
+    "scipy>=1.17.1",
+    "sounddevice>=0.5.5",
+    "soundfile>=0.13.1",
+    "tenacity>=9.1.4",
+    "torch>=2.11.0",
+    "torchaudio>=2.11.0",
+    "transformers>=5.6.2",
+    "typer>=0.24.2",
+]
+
+[project.scripts]
+meet-recorder = "meeting_recorder.cli.main:app"
+
+[dependency-groups]
+dev = [
+    "pyinstaller>=6.20.0",
+    "pytest>=9.0.3",
+    "pytest-qt>=4.5.0",
+]

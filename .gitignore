@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[oc]
+.pytest_cache/
+.venv/
+.env
+
+# Audio & Recordings (Sangat Penting!)
+recordings/
+*.wav
+chunk_*.wav
+diagnostic_raw.wav
+
+# AI Models & Large Assets
+models/
+nanobanana-output/
+scratch/
+
+# Build & Distribution
+build/
+dist/
+*.spec
+
+# Tooling
+.antigravitycli/
